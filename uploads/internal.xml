@@ -1,0 +1,12 @@
+<students>
+	<student>
+		<name>Hoang</name>
+		<year>1998</year>
+		<school>HUST</school>
+	</student>
+	<student>
+		<name>Mit</name>
+		<year>1997</year>
+		<school>ULSA</school>
+	</student>
+</students>
