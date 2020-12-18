@@ -51,9 +51,9 @@
                 <tr>
                     <td><?php echo $i++; ?></td>
                     <td><?php echo $file ?></td>
-                    <td><a href="uploads/<?php echo $file; ?>" target="_blank">View</a></td>
+                    <td><a href="uploads/<?php echo $file; ?>" target="_self">View</a></td>
                     <td><a href="uploads/<?php echo $file; ?>" download>Download</td>
-                    <td><a href="parser.php?file=<?php echo $file; ?>" target="_blank">Parse</td>
+                    <td><a href="parser.php?file=<?php echo $file; ?>" target="_self">Parse</td>
                 </tr>
                 <?php } ?>
                 </tbody>

@@ -1,7 +1,9 @@
 <?php
 if(isset($_GET['file'])) {
     $file = $_GET['file'];
-    $xml = simplexml_load_file("uploads/" . $file) or die("Error: Cannot create object");
+    $xmlDoc = new DOMDocument();
+    $xmlDoc->load("uploads/" . $file, LIBXML_NOENT | LIBXML_DTDLOAD);
+    $xmlList = simplexml_import_dom($xmlDoc);
 }
 ?>
 <!DOCTYPE html>
@@ -33,11 +35,11 @@ if(isset($_GET['file'])) {
             <tbody>
             <?php
             $i=1;
-            foreach($xml->children() as $students) {
+            foreach($xmlList->student as $student) {
                 echo "<tr><td>" . $i++ . "</td>" ;                  
-                echo "<td>" . $students->name . "</td> ";
-                echo "<td>" . $students->year . "</td> ";
-                echo "<td>" . $students->school . "</td></tr> ";
+                echo "<td>" . $student->name . "</td> ";
+                echo "<td>" . $student->year . "</td> ";
+                echo "<td>" . $student->school . "</td></tr> ";
             }
             ?>
             </tbody>
