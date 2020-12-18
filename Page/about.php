@@ -1,1 +1,1 @@
-<h2>Powered by: <a href="https://github.com/hoangph3/challenge10">Pham Hoang</h2>
+<p style="font-size: 20px;">Powered by: <a href="https://github.com/hoangph3/challenge10">Pham Hoang</p>
