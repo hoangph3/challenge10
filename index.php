@@ -54,6 +54,7 @@
                     <td><a href="uploads/<?php echo $file; ?>" target="_self">View</a></td>
                     <td><a href="uploads/<?php echo $file; ?>" download>Download</td>
                     <td><a href="parser.php?file=<?php echo $file; ?>" target="_self">Parse</td>
+                    <td><a href="parser_fixed.php?file=<?php echo $file; ?>" target="_self">Parse fixed</td>
                 </tr>
                 <?php } ?>
                 </tbody>
