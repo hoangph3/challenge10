@@ -1,5 +1,5 @@
 <?php
-if(isset($_GET['file'])) {
+if (isset($_GET['file'])) {
     $file = $_GET['file'];
     $xmlDoc = new DOMDocument();
     $xmlDoc->load("uploads/" . $file, LIBXML_NOENT | LIBXML_DTDLOAD);
