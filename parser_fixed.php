@@ -1,9 +1,8 @@
 <?php
-libxml_disable_entity_loader(true);
 if (isset($_GET['file'])) {
     $file = $_GET['file'];
     $xmlDoc = new DOMDocument();
-    $xmlDoc->load("uploads/" . $file, LIBXML_NOENT | LIBXML_DTDLOAD);
+    $xmlDoc->load("uploads/" . $file);
     $xmlList = simplexml_import_dom($xmlDoc);
 }
 ?>

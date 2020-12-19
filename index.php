@@ -39,6 +39,7 @@
                         <th>View</th>
                         <th>Download</th>
                         <th>Parse</th>
+                        <th>Parse fixed</th>
                     </tr>
                 </thead>
                 <tbody>
